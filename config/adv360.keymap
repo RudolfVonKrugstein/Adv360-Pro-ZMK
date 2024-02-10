@@ -75,15 +75,5 @@
             >;
         };
 
-        layer_mouse {
-            bindings = <
- &trans                  &trans          &trans          &trans           &trans            &trans            &trans                                                  &trans     &trans     &trans     &trans         &trans  &trans  &trans
- &trans              &kp ESCAPE          &trans    &mmv MOVE_UP           &trans     &mkp SCOLL_UP            &trans                                                  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK         &trans  &trans  &trans
- &trans  &mt LCTRL LEFT_BRACKET  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp SCROLL_DOWN            &trans  &trans  &trans                  &trans  &trans  &trans     &trans     &trans     &trans  &kp BACKSPACE  &trans  &trans
- &trans                  &trans          &trans          &trans           &trans            &trans                            &trans                  &trans                     &trans     &trans     &trans        &kp TAB  &trans  &trans
- &trans                  &trans          &trans          &trans           &trans                              &trans  &trans  &trans                  &trans  &trans  &trans                &trans     &trans         &trans  &trans  &trans
-            >;
-        };
-
     };
 };
