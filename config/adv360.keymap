@@ -39,7 +39,7 @@
             bindings = <
   &none   &kp N1          &kp N2          &kp N3       &kp N4   &kp N5            &tog 1                                                                         &mo 3   &kp N6       &kp N7           &kp N8           &kp N9         &kp N0   &none
   &none  &lt 3 Q           &kp W           &kp E        &kp R  &lt 3 T             &none                                                                         &none    &kp Y        &kp U            &kp I            &kp O        &lt 4 P   &none
-  &none  &lt 3 A  &mt LEFT_WIN S  &mt LEFT_ALT D  &mt LCTRL F  &lt 1 G             &none           &none   &none                   &none            &none        &none  &lt 1 H  &mt RCTRL J  &mt RIGHT_ALT K  &mt RIGHT_WIN L  &kp BACKSPACE   &none
+  &none  &lt 3 A  &hm LEFT_WIN S  &hm LEFT_ALT D  &hm LCTRL F  &lt 1 G             &none           &none   &none                   &none            &none        &none  &lt 1 H  &hm RCTRL J  &hm RIGHT_ALT K  &hm RIGHT_WIN L  &kp BACKSPACE   &none
   &none    &kp Z           &kp X           &kp C        &kp V    &kp B                                     &none                   &none                                  &kp N        &kp M        &kp COMMA          &kp DOT        &kp TAB   &none
   &mo 2    &none           &none           &none        &none                      &sl 2  &sk LEFT_SHIFT   &none                   &none  &sk RIGHT_SHIFT  &lt 1 SPACE                 &none            &none            &none          &none   &none
             >;
@@ -59,7 +59,7 @@
             bindings = <
  &trans        &trans                     &trans                      &trans           &trans     &trans            &trans                                                             &trans         &trans             &trans         &trans            &trans            &trans  &trans
  &trans   &kp PERCENT       &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS    &kp SEMICOLON  &kp CARET            &trans                                                             &trans  &kp AMPERSAND  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN  &kp SINGLE_QUOTE  &trans
- &trans  &kp QUESTION  &mt LEFT_WIN LEFT_BRACKET  &mt LEFT_ALT RIGHT_BRACKET  &mt LCTRL COLON  &kp SLASH            &trans      &trans  &trans                  &trans      &trans     &trans       &kp HASH    &mt RCTRL EQUAL  &mt RALT PLUS     &mt RWIN STAR   &kp EXCLAMATION  &trans
+ &trans  &kp QUESTION  &hm LEFT_WIN LEFT_BRACKET  &hm LEFT_ALT RIGHT_BRACKET  &hm LCTRL COLON  &kp SLASH            &trans      &trans  &trans                  &trans      &trans     &trans       &kp HASH    &hm RCTRL EQUAL  &hm RALT PLUS     &hm RWIN STAR   &kp EXCLAMATION  &trans
  &trans   &kp AT_SIGN             &kp LEFT_BRACE             &kp RIGHT_BRACE       &kp DOLLAR  &kp TILDE                                &trans                  &trans                             &kp MINUS     &kp UNDERSCORE      &kp GRAVE          &kp PIPE     &kp BACKSLASH  &trans
  &trans        &trans                     &trans                      &trans           &trans                       &trans  &caps_word  &trans                  &trans  &caps_word  &kp ENTER                            &trans         &trans            &trans            &trans  &trans
             >;
