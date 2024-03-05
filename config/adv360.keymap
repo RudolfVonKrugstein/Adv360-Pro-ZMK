@@ -57,8 +57,8 @@
 
         layer_sym {
             bindings = <
- &trans        &trans                     &trans                      &trans           &trans     &trans                &trans                                                             &trans         &trans             &trans         &trans            &trans            &trans  &trans
- &trans   &kp PERCENT       &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS    &kp SEMICOLON  &kp CARET                &trans                                                             &trans  &kp AMPERSAND  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN  &kp SINGLE_QUOTE  &trans
+ &trans        &kp F1                     &kp F2                      &kp F3           &kp F4     &kp F5                &trans                                                             &trans         &kp F6             &kp F7         &kp F8            &kp F9            &kp F10 &kp F11
+ &trans   &kp PERCENT       &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS    &kp SEMICOLON  &kp CARET                &trans                                                             &trans  &kp AMPERSAND  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN  &kp SINGLE_QUOTE  &kp F12
  &trans  &kp QUESTION  &hm LEFT_WIN LEFT_BRACKET  &hm LEFT_ALT RIGHT_BRACKET  &hm LCTRL COLON  &kp SLASH                &trans      &trans      &trans                  &trans      &trans     &trans       &kp HASH    &hm RCTRL EQUAL  &hm RALT PLUS     &hm RWIN STAR   &kp EXCLAMATION  &trans
  &trans   &kp AT_SIGN             &kp LEFT_BRACE             &kp RIGHT_BRACE       &kp DOLLAR  &kp TILDE                                        &trans                  &trans                             &kp MINUS     &kp UNDERSCORE      &kp GRAVE          &kp PIPE     &kp BACKSLASH  &trans
  &trans        &trans                     &trans                      &trans           &trans             &kp LC(LEFT_BRACKET)      &caps_word  &trans                  &trans  &caps_word  &kp ENTER                            &trans         &trans            &trans            &trans  &trans
