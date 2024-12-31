@@ -149,20 +149,20 @@
         default_layer {
             bindings = <
   &none  &kp N1      &kp N2      &kp N3      &kp N4        &kp N5       &tog 1                                                                      &mo 3       &kp N6   &kp N7        &kp N8      &kp N9      &kp N0        &none
-  &none  &lt 3 Q     &kp W       &kp E       &kp R         &lt 3 T      &none                                                                       &none       &kp Y    &kp U         &kp I       &kp O       &lt 4 P       &none
-  &none  &lt 3 A     &lhm LWIN S &lhm LALT D &lhm LCTRL F  &lt 3 G      &none    &none          &none                   &none  &none                &none       &kp H    &rhm RCTRL J  &rhm LALT K &rhm RWIN L &kp BACKSPACE &none
-  &none  &kp Z       &kp X       &kp C       &kp V         &lt 1 B                              &none                   &none                                   &kp N    &kp M         &kp COMMA   &kp DOT     &kp TAB       &none
+  &none  &lt 3 Q     &kp W       &kp E       &kp R         &kp T        &none                                                                       &none       &kp Y    &kp U         &kp I       &kp O       &lt 4 P       &none
+  &none  &lt 3 A     &lhm LWIN S &lhm LALT D &lhm LCTRL F  &lt 4 G      &none    &none          &none                   &none  &none                &none       &lt 3 H  &rhm RCTRL J  &rhm LALT K &rhm RWIN L &kp BACKSPACE &none
+  &none  &kp Z       &kp X       &kp C       &lt 1 V       &kp B                                &none                   &none                                   &kp N    &kp M         &kp COMMA   &kp DOT     &kp TAB       &none
   &mo 2  &none       &none       &none       &none                      &sl 2    &sk LEFT_SHIFT &none                   &none  &hm RSHIFT LC(LBKT)  &lt 2 SPACE          &none         &none       &none       &none         &none
             >;
         };
 
         layer_num {
             bindings = <
- &kp ESC   &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                          &trans                                                       &mo 3     &kp F6 &kp F7        &kp F8            &kp F9             &kp F10   &kp F11
-   &none  &kp ESC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9         &none                           &none                                                       &none     &none  &kp N7        &kp N8            &kp N9             &none     &kp F12
-   &none  &kp ESC  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6         &none                           &none   &none   &none                   &none       &none   &none     &none  &rhm RCTRL N4 &rhm LEFT_ALT N5  &rhm LEFT_WIN N6   &trans    &none
-   &none    &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0                                           &none                   &none                         &kp N0 &kp N1        &kp N2            &kp N3             &trans    &none
-   &mo 2    &none         &none         &none         &none                          &kp LC(LEFT_BRACKET)  &trans   &none                   &none  &caps_word   &none            &none         &none             &none              &none     &mo 2
+ &none &none &none    &none    &none     &none &none                                      &mo 3 &kp F6 &kp F7        &kp F8       &kp F9       &kp F10   &kp F11
+ &none &none &none    &none    &none     &none &none                                      &none &none  &kp N7        &kp N8       &kp N9       &none     &kp F12
+ &none &none &kp LWIN &kp LALT &kp LCTRL &none &none &none &none              &none &none &none &none  &rhm RCTRL N4 &rhm LALT N5 &rhm LWIN N6 &trans    &none
+ &none &none &none    &none    &none     &none             &none              &none             &kp N0 &kp N1        &kp N2       &kp N3       &trans    &none
+ &mo 2 &none &none    &none    &none           &none &none &none              &none &none &none        &none         &none        &none        &none     &mo 2
             >;
         };
 
@@ -173,6 +173,16 @@
  &trans  &kp QUESTION  &lhm LEFT_WIN LEFT_BRACKET  &lhm LEFT_ALT RIGHT_BRACKET  &lhm LCTRL COLON  &kp SLASH                &trans      &trans      &trans                  &trans      &trans     &trans       &kp HASH    &rhm RCTRL EQUAL  &rhm RALT PLUS     &rhm RWIN STAR   &kp EXCLAMATION  &trans
  &trans   &kp AT_SIGN             &kp LEFT_BRACE             &kp RIGHT_BRACE       &kp DOLLAR  &kp TILDE                                        &trans                  &trans                             &kp MINUS     &kp UNDERSCORE      &kp GRAVE          &kp PIPE     &kp BACKSLASH  &trans
  &trans        &trans                     &trans                      &trans           &trans             &kp LC(LEFT_BRACKET)      &caps_word  &trans                  &trans  &caps_word  &kp ENTER                            &trans         &trans            &trans            &trans  &trans
+            >;
+        };
+
+        layer_int {
+            bindings = <
+ &none &none &none     &none     &none     &none     &none                                      &mo 3 &none &none &none &none &none &none
+ &none &none &kp RA(S) &kp RA(Y) &kp RA(P) &kp RA(Q) &none                                      &none &none &none &none &none &none &none
+ &none &none &none     &none     &none     &none     &none &none &none              &none &none &none &none &none &none &none &none &none
+ &none &none &none     &none     &none     &none                 &none              &none             &none &none &none &none &none &none
+ &mo 2 &none &none     &none     &none               &none &none &none              &none &none &none       &none &none &none &none &mo 2
             >;
         };
 
