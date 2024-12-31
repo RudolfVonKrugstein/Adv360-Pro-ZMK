@@ -12,7 +12,7 @@
  * edit it directly.
  */
 
-#include "zmk-helpers/key-labels/adv360_custom.h"                                      // key-position labels
+#include "keys.h"                                      // key-position labels
 #define KEYS_L LN0 LN1 LN2 LN3 LN4 LN5 \
                LT0 LT1 LT2 LT3 LT4 LT5 \
                LM0 LM1 LM2 LM3 LM4 LM5 \
