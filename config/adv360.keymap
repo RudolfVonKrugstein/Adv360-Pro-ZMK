@@ -12,9 +12,7 @@
  * edit it directly.
  */
 
-#include <behaviors.dtsi>
 #include "zmk-helpers/key-labels/adv360_custom.h"                                      // key-position labels
-#include <dt-bindings/zmk/keys.h>
 #define KEYS_L LN0 LN1 LN2 LN3 LN4 LN5 \
                LT0 LT1 LT2 LT3 LT4 LT5 \
                LM0 LM1 LM2 LM3 LM4 LM5 \
@@ -27,6 +25,9 @@
 #define THUMBS_R RH0 RH1 RH2
 
 #define THUMBS THUMBS_L THUMBS_R
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
 
 / {
   behaviors {
@@ -147,11 +148,11 @@
 
         default_layer {
             bindings = <
-  &none  &kp N1      &kp N2          &kp N3          &kp N4        &kp N5       &tog 1                                                                      &mo 3       &kp N6   &kp N7        &kp N8           &kp N9           &kp N0        &none
-  &none  &lt 3 Q     &kp W           &kp E           &kp R         &lt 3 T      &none                                                                       &none       &kp Y    &kp U         &kp I            &kp O            &lt 4 P       &none
-  &none  &lt 3 A     &lhm LEFT_WIN S &lhm LEFT_ALT D &lhm LCTRL F  &lt 3 G      &none    &none          &none                   &none  &none                &none       &kp H    &rhm RCTRL J  &rhm RIGHT_ALT K &rhm RIGHT_WIN L &kp BACKSPACE &none
-  &none  &kp Z       &kp X           &kp C           &kp V         &lt 1 B                              &none                   &none                                   &kp N    &kp M         &kp COMMA        &kp DOT          &kp TAB       &none
-  &mo 2  &none       &none           &none           &none                      &sl 2    &sk LEFT_SHIFT &none                   &none  &hm RSHIFT LC(LBKT)  &lt 2 SPACE          &none         &none            &none            &none         &none
+  &none  &kp N1      &kp N2      &kp N3      &kp N4        &kp N5       &tog 1                                                                      &mo 3       &kp N6   &kp N7        &kp N8      &kp N9      &kp N0        &none
+  &none  &lt 3 Q     &kp W       &kp E       &kp R         &lt 3 T      &none                                                                       &none       &kp Y    &kp U         &kp I       &kp O       &lt 4 P       &none
+  &none  &lt 3 A     &lhm LWIN S &lhm LALT D &lhm LCTRL F  &lt 3 G      &none    &none          &none                   &none  &none                &none       &kp H    &rhm RCTRL J  &rhm LALT K &rhm RWIN L &kp BACKSPACE &none
+  &none  &kp Z       &kp X       &kp C       &kp V         &lt 1 B                              &none                   &none                                   &kp N    &kp M         &kp COMMA   &kp DOT     &kp TAB       &none
+  &mo 2  &none       &none       &none       &none                      &sl 2    &sk LEFT_SHIFT &none                   &none  &hm RSHIFT LC(LBKT)  &lt 2 SPACE          &none         &none       &none       &none         &none
             >;
         };
 
