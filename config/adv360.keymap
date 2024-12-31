@@ -68,22 +68,22 @@
       compatible = "zmk,combos";
       combo_esc {
           timeout-ms = <50>;
-          key-positions = <LT2 LT3>;
+          key-positions = <LM3 LM4>;
           bindings = <&kp LC(LBKT)>;
       };
       combo_ae {
           timeout-ms = <50>;
-          key-positions = <LB0 LB1>;
+          key-positions = <LT0 LT1>;
           bindings = <&kp RA(Q)>;
       };
       combo_oe {
           timeout-ms = <50>;
-          key-positions = <LB1 LB2>;
+          key-positions = <LT1 LT2>;
           bindings = <&kp RA(P)>;
       };
       combo_ue {
           timeout-ms = <50>;
-          key-positions = <LB2 LB3>;
+          key-positions = <LT2 LT3>;
           bindings = <&kp RA(Y)>;
       };
       combo_ss {
