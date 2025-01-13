@@ -29,6 +29,32 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+// DEFAULT LAYOUT LEFT
+//                       |-------------|------------|------------|------------|------------|
+#define DEF_NUMROW_LEFT   &kp N1        &kp N2       &kp N3       &kp N4       &kp N5
+//                       |-------------|------------|------------|------------|------------|
+#define DEF_TOPROW_LEFT   &lt 3 Q       &kp W        &kp E        &kp R        &kp T
+//                       |-------------|------------|------------|------------|------------|
+#define DEF_MIDROW_LEFT   &lt 3 A       &lhm LWIN S  &lhm LALT D  &lhm LCTRL F &lt 4 G      
+//                       |-------------|------------|------------|------------|------------|
+#define DEF_BOTROW_LEFT   &kp Z         &kp X        &kp C        &lt 1 V      &kp B
+//                       |-------------|------------|------------|------------|------------|
+#define DEF_THUMBS_LEFT   &none         &sl 2        &sk LEFT_SHIFT
+
+// DEFAULT LAYOUT RIGHT
+//                       |-------------|------------|------------|------------|------------|
+#define DEF_NUMROW_RIGHT  &kp N6        &kp N7       &kp N8       &kp N9       &kp N0  
+//                       |-------------|------------|------------|------------|------------|
+#define DEF_TOPROW_RIGHT  &kp Y         &kp U        &kp I        &kp O        &lt 4 P
+//                       |-------------|------------|------------|------------|------------|
+#define DEF_MIDROW_RIGHT  &lt 3 H       &rhm RCTRL J &rhm LALT K  &rhm RWIN L  &kp BACKSPACE
+//                       |-------------|------------|------------|------------|------------|
+#define DEF_BOTROW_RIGHT  &kp N         &kp M        &kp COMMA    &kp DOT      &kp TAB
+//                       |-------------|------------|------------|------------|------------|
+#define DEF_THUMBS_RIGHT  &hm RSHIFT LC(LBKT)        &lt 2 SPACE  &none
+
+
+
 / {
   behaviors {
     #include "macros.dtsi"
@@ -148,11 +174,11 @@
 
         default_layer {
             bindings = <
-  &none  &kp N1      &kp N2      &kp N3      &kp N4        &kp N5       &tog 1                                                                      &mo 3       &kp N6   &kp N7        &kp N8      &kp N9      &kp N0        &none
-  &none  &lt 3 Q     &kp W       &kp E       &kp R         &kp T        &none                                                                       &none       &kp Y    &kp U         &kp I       &kp O       &lt 4 P       &none
-  &none  &lt 3 A     &lhm LWIN S &lhm LALT D &lhm LCTRL F  &lt 4 G      &none    &none          &none                   &none  &none                &none       &lt 3 H  &rhm RCTRL J  &rhm LALT K &rhm RWIN L &kp BACKSPACE &none
-  &none  &kp Z       &kp X       &kp C       &lt 1 V       &kp B                                &none                   &none                                   &kp N    &kp M         &kp COMMA   &kp DOT     &kp TAB       &none
-  &mo 2  &none       &none       &none       &none                      &sl 2    &sk LEFT_SHIFT &none                   &none  &hm RSHIFT LC(LBKT)  &lt 2 SPACE          &none         &none       &none       &none         &none
+  &none  DEF_NUMROW_LEFT       &tog 1                           &mo 3 DEF_NUMROW_RIGHT       &none
+  &none  DEF_TOPROW_LEFT       &none                            &none DEF_TOPROW_RIGHT       &none
+  &none  DEF_MIDROW_LEFT       &none &none &none    &none &none &none DEF_MIDROW_RIGHT       &none
+  &none  DEF_BOTROW_LEFT                   &none    &none             DEF_BOTROW_RIGHT       &none
+  &mo 2  &none &none &none DEF_THUMBS_LEFT &none    &none DEF_THUMBS_RIGHT &none &none &none &none
             >;
         };
 
