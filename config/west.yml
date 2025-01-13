@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: refil
       url-base: https://github.com/refil
-    - name: mouse_pull_request
-      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
       remote: refil
