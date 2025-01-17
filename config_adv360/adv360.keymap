@@ -47,7 +47,7 @@
 //                       |-------------|------------|------------|------------|------------|
 #define DEF_BOTROW_LEFT   &kp Z         &kp X        &kp C        &lt 1 V      &kp B
 //                       |-------------|------------|------------|------------|------------|
-#define DEF_THUMBS_LEFT   &sl LNUM      &sl LNAV     &kp SPACE
+#define DEF_THUMBS_LEFT   &sl LNUM      &sl LSYM     &sl LNAV
 
 // DEFAULT LAYOUT RIGHT
 //                       |-------------|------------|------------|------------|------------|
@@ -59,7 +59,7 @@
 //                       |-------------|------------|------------|------------|------------|
 #define DEF_BOTROW_RIGHT  &kp N         &kp M        &kp COMMA    &kp DOT      &kp TAB
 //                       |-------------|------------|------------|------------|------------|
-#define DEF_THUMBS_RIGHT                             &sk RSHIFT   &sl LSYM     &sl LNUM
+#define DEF_THUMBS_RIGHT                             &sk RSHIFT   &kp SPACE    &sl LNUM
 
 // ###############################################################################
 
@@ -85,7 +85,7 @@
 //                       |-------------|------------|------------|------------|------------|
 #define SYM_BOTROW_RIGHT  &kp MINUS     &kp UNDERSCORE &kp GRAVE  &kp PIPE     &kp BACKSLASH
 //                       |-------------|------------|------------|------------|------------|
-#define SYM_THUMBS_RIGHT                             &caps_word   &none        &none
+#define SYM_THUMBS_RIGHT                             &caps_word   &kp ENTER    &none
 
 // ###############################################################################
 
