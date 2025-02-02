@@ -1,5 +1,7 @@
 manifest:
   remotes:
+    - name: my_repos
+      url-base: https://github.com/RudolfVonKrugstein
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: refil
@@ -9,5 +11,8 @@ manifest:
       remote: refil
       revision: adv360-z3.5
       import: app/west.yml
+    - name: kbd_layout
+      remote: my_repos
+      revision: main
   self:
     path: config
