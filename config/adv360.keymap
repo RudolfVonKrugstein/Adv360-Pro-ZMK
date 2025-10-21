@@ -12,6 +12,7 @@
 
 #define THUMBS THUMBS_L THUMBS_R
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500 
 #include "kbd_layout/keymap.h"
 
 #include <behaviors.dtsi>
